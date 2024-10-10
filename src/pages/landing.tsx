@@ -1,10 +1,11 @@
 import React from 'react'
+import Layout from '../components/layout/layout'
 
 const Landing = () => {
   return (
-    <div>
-      <h2 className='text-3xl font-bold underline'>hello world</h2>
-    </div>
+    <Layout>
+      <h2 className='mt-[100px]'>hello World!</h2>
+    </Layout>
   )
 }
 
