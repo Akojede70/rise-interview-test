@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { logo } from "../../assets/png/images-icon";
+import { logo, arrow, ellipse } from "../../assets/png/images-icon";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -10,15 +10,16 @@ const Navbar: React.FC = () => {
   };
 
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
-    { label: "Contacts", href: "#contacts" },
+    { label: "Home", href: "#home", icon: ellipse },
+    { label: "Products", href: "#Products", icon: arrow },
+    { label: "Investment Club", href: "#skills" },
+    { label: "Blog", href: "#Blog" },
+    { label: "About Us", href: "#About Us" },
+    { label: "FAQs", href: "#FAQs" },
   ];
 
   return (
-    <nav className="fixed w-full h-[60px] flex justify-between items-center bg-gray-900 text-gray-300 px-4">
+    <nav className="fixed w-full h-[60px] flex justify-between items-center bg-primaryWhite text-primaryTeal px-4">
       {/* Mobile Toggle Button */}
       <button onClick={toggleNavbar} className="md:hidden z-10">
         {isOpen ? (
@@ -31,17 +32,26 @@ const Navbar: React.FC = () => {
       {/* Logo */}
       <div>
         <img
-          className="w-[40px] lg:ml-[70px] xl:ml-[90px]"
+          className="w-[70px] lg:ml-[70px] xl:ml-[90px]"
           src={logo}
           alt="Company Logo"
         />
       </div>
 
       {/* Desktop Navigation */}
-      <ul className="hidden flex-row space-x-6 mr-[70px] md:flex">
+      <ul className="hidden flex-row space-x-6 mr-[120px] md:flex Tomato Grotesk">
         {navItems.map((item) => (
           <li key={item.label}>
-            <a href={item.href}>{item.label}</a>
+            <a href={item.href} className={item.label === "Home" ? "font-bold" : ""}
+            >{item.label}
+            {item.label === "Products" && (
+                <img src={item.icon} alt="arrow" className="inline-block ml-1 w-4 h-4 animate-moveUpDown"/>
+            )}
+            {item.label === "Home" && (
+                <img src={item.icon} alt="ellipse" className="ml-5"/>
+            )}
+            
+            </a>
           </li>
         ))}
       </ul>

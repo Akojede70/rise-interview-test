@@ -9,16 +9,24 @@ module.exports = {
       xl: '1024px',
     },
     extend: {
-      animation: ['motion-safe'],
+      animation: {
+        moveUpDown: 'moveUpDown 3s ease-in-out infinite',
+      },
+      keyframes: {
+        moveUpDown: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-6px)' },
+        },
+      },
       darkMode: 'class',
       colors: {
         primaryWhite: "#FFFFFF",
-        primary0Blue: "#203B8A",           
+        primaryTeal: "#07969E",           
         primary1: "#FFFFFF",
         primary2: "#5E6978",
       },
       fontFamily: {
-        'body': ['"Open Sans"', "sans"],
+        'body': ['"Open Sans"', "sans", "Tomato Grotesk"],
         'sans': ['Outfit', 'sans'],
         'roboto': ['Roboto', 'Arial', 'sans-serif'],
       },
