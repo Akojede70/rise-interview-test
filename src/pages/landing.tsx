@@ -4,7 +4,7 @@ import Layout from '../components/layout/layout'
 const Landing = () => {
   return (
     <Layout>
-      <h2 className='mt-[100px]'>hello World!</h2>
+      <h2 className='mt-[500px]'>hello World!</h2>
     </Layout>
   )
 }
