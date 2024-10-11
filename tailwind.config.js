@@ -11,19 +11,29 @@ module.exports = {
     extend: {
       animation: {
         moveUpDown: 'moveUpDown 3s ease-in-out infinite',
+        moveLeftRight: 'moveLeftRight 3s ease-in-out infinite',
+        moveLeftRightSlow: 'moveLeftRightSlow 4s ease-in-out infinite',
       },
       keyframes: {
         moveUpDown: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-6px)' },
         },
+        moveLeftRight: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(30px)' }, 
+        },
+        moveLeftRightSlow: { 
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(7px)' },
+        },
       },
       darkMode: 'class',
       colors: {
         primaryWhite: "#FFFFFF",
+        primaryBlack: "#000000",
         primaryTeal: "#07969E",           
-        primary1: "#FFFFFF",
-        primary2: "#5E6978",
+        primaryLightGray: "#ebebeb",
       },
       fontFamily: {
         'body': ['"Open Sans"', "sans", "Tomato Grotesk"],

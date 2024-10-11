@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className="fixed w-full h-[60px] flex justify-between items-center bg-primaryWhite text-primaryTeal px-4">
+    <nav className="fixed w-full z-30 h-[60px] flex justify-between items-center bg-primaryWhite text-primaryTeal px-4">
       {/* Mobile Toggle Button */}
 
       <div className="w-full flex flex-col items-center space-y-4 mt-2">
@@ -28,9 +28,9 @@ const Navbar: React.FC = () => {
     <input
       type="text"
       defaultValue="web.rise.capital"
-      className="bg-[#ebebeb] md:hidden text-center rounded-[10px] text-[#000000] font-bold h-[47px] w-full px-[2%] py-[2%] mt-[20%] focus:outline-none focus:ring-2 focus:ring-black"
+      className="bg-primaryLightGray md:hidden text-center rounded-[10px] text-primaryBlack font-bold h-[47px] w-full px-[2%] py-[2%] mt-[20%] focus:outline-none focus:ring-2 focus:ring-black"
     />
-     <IoLockClosed className="absolute left-[30%] top-[82%] transform -translate-y-1/2 text-black md:hidden" />
+     <IoLockClosed className="absolute left-[30%] top-[82%] transform -translate-y-1/2 text-primaryBlack md:hidden" />
     </div>
   
 
@@ -73,6 +73,7 @@ const Navbar: React.FC = () => {
       </ul>
 
       {/* Mobile Navbar View */}
+      <aside>
       <ul
         className={`${
           isOpen ? "block" : "hidden"
@@ -86,6 +87,7 @@ const Navbar: React.FC = () => {
           </li>
         ))}
       </ul>
+      </aside>
     </nav>
   );
 };
