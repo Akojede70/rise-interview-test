@@ -4,7 +4,7 @@ import logo from "./nav-icon-images/logo.png" // general rise logo
 import arrow from "./nav-icon-images/down-arrow.png"
 import ellipse from "./nav-icon-images/ellipse.png"
 
-// landing
+// landing page
 // section-1 
 import ellipse1 from "./landing-icon-images/Ellipse-1.png"
 import ellipse2 from "./landing-icon-images/Ellipse-2.png"
@@ -23,6 +23,17 @@ import people3 from "./landing-icon-images/people-icon3.png"
 import people4 from "./landing-icon-images/people-icon4.png"
 import logos from "./landing-icon-images/different-logo.png"
 import buttonArrowIcon  from "./landing-icon-images/button-arrow.png"
+
+// section-3
+
+
+// section-4
+import peoples from "./landing-icon-images/peoples.png"
+// section 7
+import phoneWallet from "./landing-icon-images/phone-wallet.png"
+// section 8
+import bigImage from "./landing-icon-images/big-image.png"
+
 
 export {
     logo,
@@ -48,4 +59,14 @@ export {
     people4,
     logos,
     buttonArrowIcon,
+
+    // section 3
+
+
+    // section 4
+    peoples,
+    // section 7
+    phoneWallet,
+    // section 8
+    bigImage,
 }

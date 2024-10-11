@@ -34,6 +34,9 @@ module.exports = {
         primaryBlack: "#000000",
         primaryTeal: "#07969E",           
         primaryLightGray: "#ebebeb",
+        primaryViolet: "#8c5ef7",
+        primaryCyan: "#06979e",
+        primaryTurquoise: "#A0DDE2",
       },
       fontFamily: {
         'body': ['"Open Sans"', "sans", "Tomato Grotesk"],

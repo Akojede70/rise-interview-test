@@ -1,7 +1,7 @@
 import React from 'react';
-import { buttonArrowIcon, people1 } from '../../assets/png/images-icon';
+import { buttonArrowIcon } from '../../assets/png/images-icon';
 
-// Define the props interface
+
 interface HeroSectionLeftProps {
     header: string;
     buttonText: string; 

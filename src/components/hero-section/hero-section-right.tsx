@@ -1,5 +1,5 @@
 import React from 'react';
-import { buttonArrowIcon, people2 } from '../../assets/png/images-icon';
+import { buttonArrowIcon } from '../../assets/png/images-icon';
 
 interface HeroSectionRightProps {
   header: string;
@@ -9,6 +9,7 @@ interface HeroSectionRightProps {
   smallText: string;
   breakText1: string;
   breakText2: string; 
+  breakText3: string; 
 }
 
 const HeroSectionRight: React.FC<HeroSectionRightProps> = ({
@@ -19,6 +20,7 @@ const HeroSectionRight: React.FC<HeroSectionRightProps> = ({
   smallText,
   breakText1,
   breakText2, 
+  breakText3
 }) => {
   return (
     <div className='flex gap-[20%]'>
@@ -29,8 +31,8 @@ const HeroSectionRight: React.FC<HeroSectionRightProps> = ({
         <h2 className='text-3xl font-bold'>
           {header} <br /> {breakHeader}
         </h2>
-        <p className='my-[1.5%] w-[80%]'>
-          {smallText} <br /> {breakText1} <br /> {breakText2}
+        <p className='my-[1.5%]'>
+          {smallText} <br /> {breakText1} <br /> {breakText2} <br/> {breakText3}
         </p>
         <button className="text-primaryTeal flex items-center gap-2 ">
           {buttonText}
