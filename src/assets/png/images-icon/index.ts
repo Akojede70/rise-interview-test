@@ -33,7 +33,9 @@ import peoples from "./landing-icon-images/peoples.png"
 import phoneWallet from "./landing-icon-images/phone-wallet.png"
 // section 8
 import bigImage from "./landing-icon-images/big-image.png"
-
+// footer 
+import footerArrow from "./footer-icon-images/footer-arrow.png"
+import footerLogo from "./footer-icon-images/footer-logo.png"
 
 export {
     logo,
@@ -69,4 +71,8 @@ export {
     phoneWallet,
     // section 8
     bigImage,
+
+    // footer
+    footerArrow,
+    footerLogo,
 }
