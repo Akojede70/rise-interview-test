@@ -1,8 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
-import { apple, bigImage, ellipse1, ellipse2, ellipse3, ellipse4, ellipse6, google, logos, people1, people2, people3, people4, peoples, phone, phoneWallet,  } from '../assets/png/images-icon'
+import { apple, bigImage, buttonArrowIcon, circle1, circle2, circle3, ellipse1, ellipse2, ellipse3, ellipse4, ellipse6, google, jesse, logos, people1, people2, people3, people4, peoples, phone, phoneWallet, raye,  } from '../assets/png/images-icon'
 import HeroSectionLeft from '../components/hero-section/hero-section-left'
 import HeroSectionRight from '../components/hero-section/hero-section-right'
+import AssetCards from '../components/cards/asset-card'
+import UserCard from '../components/cards/users-card'
 
 const Landing = () => {
   return (
@@ -48,8 +50,16 @@ const Landing = () => {
         </section>
 
 {/* section 3 */}
- <section>
-
+ <section className='px-[10%]'>
+  <div className='text-center mb-[3%]'>
+    <h2 className='text-4xl font-bold'>Asset Classes</h2>
+    <p>It's your money, choose where you invest it </p>
+  </div>
+  <div className='flex items-center justify-center'>
+    <AssetCards circle={circle3} header='Stocks' smallText='We help you invest and manage your' breakText1='money by investing in our portfolio of 30' breakText2='high-growth stocks across the US market' breakText3='with our equity portfolioof power stocks.' btnText='Learn how stocks work' bgColor='bg-[#fff4f0]'/>
+    <AssetCards circle={circle2} header='Real Estate' smallText='Our Real Estate plan is the sweet' breakText1='middle. Best for those who want a' breakText2='balance of good returns and medium' breakText3='risk. This plan invest in rented' breakText4='building in the US.' btnText='Learn how Real Estate Work' bgColor='bg-[#f6f2ff]'/>
+    <AssetCards circle={circle1} header='Fixed Income' smallText='A low-risk asset perfect for anyone' breakText1='who wants to protect their money in a' breakText2='secure, appreciating currency i.e the' breakText3='dollar. for people who want to protect' breakText4='their hard-earned money from' breakText5='inflation while earning steady returns.' btnText='Learn how Fixed Income Work' bgColor='bg-[#edffff]'/>
+    </div>
  </section>
 
            {/* section 4 */}
@@ -68,13 +78,31 @@ const Landing = () => {
         </section>
 
    {/* section 5 */}
-        <section>
-
+        <section className='mt-[5%]'>
+        <div className="bg-gradient-to-r from-pink-200 via-white to-blue-200 flex justify-center py-16 px-6">
+      <div className="max-w-3xl text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-primaryBlack mb-4">
+          How we are Regulated
+        </h2>
+        <p className="text-primaryBlack leading-relaxed">
+          Rise is registered and regulated both in the US and in Nigeria. Our <br/> team is made up of US registered investment advisers, our <br/> Nigerian users are covered by our SEC licensed trustees, ARM <br/> Trustees, and all our assets are held with regulated third parties, in <br/> all relevant jurisdictions.
+        </p>
+      </div>
+    </div>
         </section>
 
-        {/* section 6 */}
-        <section>
 
+        {/* section 6 */}
+        <section className='mt-[5%] px-[5%]'>
+          <div className='text-center'>
+            <h2 className='text-4xl font-bold text-primaryCyan'> From The People Who Use Rise</h2>
+            <p className='text-[18px]'>Our mission at Risevest is to empower more people just like you <br/> to achieve your personal financial goals</p>
+          </div>
+          <div className='flex items-center justify-center gap-[4%] mt-[2%]'>
+           <UserCard smallText="don't want to invest in seperate stocks because" breakText1='I am not a financial expert, and I would rather trust' breakText2=' my money in the hands of people like Rise, who' breakText3='are experienced and knowledgeable.' userImage={jesse} userName='Lade'/>
+           <UserCard smallText="I don't want to invest in seperate stocks because" breakText1='I am not financial expert and I would rather trust' breakText2='my money in the hands of people like Rise who' breakText3='are skilled and knowledgeable.' userImage={jesse} userName='Jesse'/>
+           <UserCard width="30%" height='240px' smallText='I choose Rise because of its leadership wealth of' breakText1='  knowledge, and the people who I support. I invest' breakText2=' with Rise in other to protect my savings and' breakText3='investment from being depleted by devaluation and' breakText4="inflation that's at an all time high in Nigeria." breakText5="" userImage={raye} userName='Raye'/>
+           </div>
         </section>
 
         {/* section 7 */}

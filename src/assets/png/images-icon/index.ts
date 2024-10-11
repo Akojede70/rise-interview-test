@@ -25,10 +25,17 @@ import logos from "./landing-icon-images/different-logo.png"
 import buttonArrowIcon  from "./landing-icon-images/button-arrow.png"
 
 // section-3
-
+import circle1 from './landing-icon-images/circle1.png'
+import circle2 from './landing-icon-images/circle2.png'
+import circle3 from './landing-icon-images/circle3.png'
 
 // section-4
 import peoples from "./landing-icon-images/peoples.png"
+
+// section 6
+import jesse from "./landing-icon-images/jesse.png"
+import raye from "./landing-icon-images/raye.png"
+
 // section 7
 import phoneWallet from "./landing-icon-images/phone-wallet.png"
 // section 8
@@ -63,10 +70,15 @@ export {
     buttonArrowIcon,
 
     // section 3
-
+    circle1,
+    circle2,
+    circle3,
 
     // section 4
     peoples,
+    raye,
+    // sectio 6
+    jesse,
     // section 7
     phoneWallet,
     // section 8

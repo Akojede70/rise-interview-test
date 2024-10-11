@@ -28,6 +28,12 @@ module.exports = {
           '50%': { transform: 'translateX(7px)' },
         },
       },
+      boxShadow: {
+       'left-right': `
+        -20px 0 20px rgba(236, 254, 254, 0.7), 
+          20px 0 20px rgba(236, 254, 254, 0.7)
+        `,
+      },
       darkMode: 'class',
       colors: {
         primaryWhite: "#FFFFFF",
