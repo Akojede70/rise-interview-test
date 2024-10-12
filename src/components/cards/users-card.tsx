@@ -15,20 +15,20 @@ const UserCard: React.FC<UserCardProps> = ({
   userName ,
   width = '30%',
   height = 'auto',
-  marginTop = "12%"
+  marginTop = "28%"
 }) => {
   return (
     <div className='w-[35%] border rounded-[6px] shadow-left-right px-3 ' style={{ width: width, height: height}}>
       
-      <p className='mt-[6%] text-[16px'>
+      <p className='mt-[6%] text-[16px]'>
         {smallText} 
       </p>
  
-      <div className='lg:flex lg:gap-[4%] lg:ont-bold lg:mb-[7%] hidden' style={{ marginTop: marginTop}}>
+      <div className='lg:flex lg:gap-[4%] lg:font-bold lg:mb-[10%] hidden' style={{ marginTop: marginTop}}>
         <img src={userImage} alt={userName} />
         <p>{userName}</p>
       </div>
-      <div className='flex flex-col my-[8%] gap-[4%] items-center justify-center lg:hidden'>
+      <div className='flex flex-col items-center justify-center my-[8%] gap-[4%]  lg:hidden'>
       <img src={userImage} alt={userName} />
       <p className='font-bold'>{userName}</p>
       <p >UX Researcher</p>

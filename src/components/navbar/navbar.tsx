@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
       </div>
       </div>
       {/* Desktop Navigation */}
-      <ul className="hidden w-[78%] flex-row space-x-6 mr-[90px] md:flex mt-4 Tomato Grotesk">
+      <ul className="hidden w-[300%] lg:w-full space-x-6 flex-row lg:pl-[3%] md:flex mt-4 Tomato Grotesk">
         {navItems.map((item) => (
           <li key={item.label}>
             <a href={item.href} className={item.label === "Home" ? "font-bold" : ""}

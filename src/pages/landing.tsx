@@ -51,9 +51,9 @@ const Landing = () => {
 
         {/* section 2 */}
         <section className='mt-[7%] px-[10%]'>
-          <div className='w-full bg-primaryWhite'>
-            <img src={mobileLogo} alt='mobile' className='lg:hidden mb-[5%]'/>
-            <img src={logos} alt='different-logos'/>
+          <div className='w-full bg-primaryWhite lg:flex items-center justify-center'>
+            <img src={mobileLogo} alt='mobile' className='lg:hidden mb-[5%] md:mx-auto'/>
+            <img src={logos} alt='different-logos' className='md:mx-auto'/>
           </div>
 
          
@@ -80,7 +80,8 @@ const Landing = () => {
   <div className=' space-y-[14%] lg:space-y-0 mt-[8%] lg:mt-0 lg:flex items-center justify-center'>
     <AssetCards circle={circle3} header='Stocks' smallText='We help you invest and manage your money by investing in our portfolio of 30 high-growth stocks across the US market with our equity portfolioof power stocks.' btnText='Learn How Stocks Work' bgColor='bg-[#fff4f0]'/>
     <AssetCards circle={circle2} header='Real Estate' smallText='Our Real Estate plan is the sweet middle. Best for those who want a balance of good returns and medium risk. This plan invest in rented building in the US.' btnText='Learn How Real Estate Work' bgColor='bg-[#f6f2ff]'/>
-    <AssetCards circle={circle1} header='Fixed Income'  marginTop="10%" smallText="A low-risk asset perfect for anyone who wants to protect their money in a secure, appreciating currency i.e the dollar. for people who want to protect their hard-earned money from" btnText='Learn How Fixed Income Work' bgColor='bg-[#edffff]'/>
+    <AssetCards circle={circle1} header='Fixed Income'   smallText="A low-risk asset perfect for anyone who wants to protect their money in a secure, appreciating currency i.e the dollar. for people who want to protect their hard-earned money from" btnText='Learn How Fixed Income Work' bgColor='bg-[#edffff]'/>
+    {/* marginTop="10%" */}
     </div>
  </section>
 
@@ -126,7 +127,8 @@ const Landing = () => {
           <div className='flex items-center justify-center gap-[4%] mt-[2%]'>
            <UserCard smallText="I don't want to invest in seperate stocks because I am not financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable." userImage={jesse} userName='Lade'/>
            <UserCard smallText="I don't want to invest in seperate stocks because I am not financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable." userImage={jesse} userName='Jesse'/>
-           <UserCard width="30%" height='220px' marginTop='5%'  smallText="I choose Rise because of its leadership wealth of  knowledge, and the people who I support. I invest with Rise in other to protect my savings and investment from being depleted by devaluation and inflation that's at an all time high in Nigeria." userImage={raye} userName='Raye'/>
+           <UserCard width="30%" height='281px' marginTop='73px'  smallText="I choose Rise because of its leadership wealth of  knowledge, and the people who I support. I invest with Rise in other to protect my savings and investment from being depleted by devaluation and inflation that's at an all time high in Nigeria." userImage={raye} userName='Raye'/>
+           {/* marginTop='5%' */}
            </div>
            </div>
            {/* mobile */}
@@ -152,7 +154,7 @@ const Landing = () => {
               <button className='w-[60%] mx-auto lg:mx-0 lg:w-[42%] p-[2%] bg-primaryTurquoise rounded-[3%] text-primaryBlack font-bold '> Join our Community</button>
               
             </div>
-            <div>
+            <div className='flex items-center justify-center'>
                 <img src={peoples} alt='peoples'/>
             </div>
           </div>
