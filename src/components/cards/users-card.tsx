@@ -27,7 +27,7 @@ const UserCard: React.FC<UserCardProps> = ({
 }) => {
   return (
     <div className='w-[30%] border rounded-[6px] shadow-left-right px-4' style={{ width: width, height: height}}>
-      <p className='pt-[6%]'>
+      <p className='pt-[6%] text-[16px]'>
         {smallText} <br /> {breakText1} <br /> {breakText2} <br /> {breakText3} <br /> {breakText4} <br/>{breakText5}
       </p>
       <div className='flex gap-[4%] font-bold mt-[12%] mb-[7%]'>

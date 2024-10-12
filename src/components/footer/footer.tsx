@@ -12,12 +12,12 @@ const Footer = () => {
         <img src={footerLogo} alt='footer logo' className='mb-[30%] w-[70%] pt-[2%] '/>
         </div>
         <div className='h-[18%] flex flex-col gap-[20%]'>
-        <button > About Us</button>
-        <button> Careers</button>
-        <button> FAQs</button>
-        <button> Contact Info</button>
-        <button> Press</button>
-        <button> Rise Impact</button>
+        <button className='text-left'> About Us</button>
+        <button className='text-left'> Careers</button>
+        <button className='text-left'> FAQs</button>
+        <button className='text-left'> Contact Info</button>
+        <button className='text-left'> Press</button>
+        <button className='text-left'> Rise Impact</button>
       </div>
       </div>
 
@@ -31,8 +31,8 @@ const Footer = () => {
       {/* 3rd col */}
       <div className='flex flex-col gap-[4%]'>
         <h6 className='font-bold mb-[8%]'>Products</h6>
-        <button> Rise App</button>
-        <button> Wallets</button>
+        <button className='text-left'> Rise App</button>
+        <button className='text-left'> Wallets</button>
         <button> Asset Classes</button>
       </div>
       

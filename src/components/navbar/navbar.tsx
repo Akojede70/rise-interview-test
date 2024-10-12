@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
                 <img src={item.icon} alt="arrow" className="inline-block ml-1 w-4 h-4 animate-moveUpDown"/>
             )}
             {item.label === "Home" && (
-                <img src={item.icon} alt="ellipse" className="ml-5"/>
+                <img src={item.icon} alt="ellipse" className="ml-5 animate-moveLeftRightSlow"/>
             )}
             
             </a>
