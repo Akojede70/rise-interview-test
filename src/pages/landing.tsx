@@ -122,7 +122,7 @@ const Landing = () => {
         {/* section 8 */}
         <section className='mt-[10%] px-[5%] mb-[10%]'>
            <div className='flex items-center justify-center'>
-            <img src={bigImage} alt='image details' className='w-[91%] md:block hidden'/>
+            <img src={bigImage} alt='details' className='w-[91%] md:block hidden'/>
            </div>
         </section>
       </body>
