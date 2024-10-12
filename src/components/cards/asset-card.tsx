@@ -1,5 +1,5 @@
 import React from 'react';
-import { buttonArrowIcon, circle3 } from '../../assets/png/images-icon';
+import { buttonArrowIcon } from '../../assets/png/images-icon';
 
 interface AssetCardsProps {
   circle: string;

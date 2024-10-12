@@ -15,7 +15,9 @@ export const UserContextProvider: React.FC = ({ children }: any) => {
         <UserContext.Provider 
         value={{ 
           users,
-          loading
+          setUsers,
+          loading,
+          setLoading,
         }}>
             {children}
         </UserContext.Provider>
