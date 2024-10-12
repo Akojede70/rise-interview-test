@@ -2,39 +2,36 @@ import React from 'react';
 
 interface UserCardProps {
   smallText: string;
-  breakText1: string;
-  breakText2: string;
-  breakText3: string;
-  breakText4?: string;
-  breakText5?: string;
   userImage: string;
   userName: string;
   width?: string;
   height?: string;
+  marginTop?: string;
 }
 
 const UserCard: React.FC<UserCardProps> = ({ 
   smallText, 
-  breakText1, 
-  breakText2, 
-  breakText3, 
-  breakText4 = '', 
-  breakText5 = '',
   userImage, 
   userName ,
   width = '30%',
-  height = 'auto'
+  height = 'auto',
+  marginTop = "12%"
 }) => {
   return (
     <div className='w-[35%] border rounded-[6px] shadow-left-right px-3 ' style={{ width: width, height: height}}>
       
-      <p className='mt-[6%] text-[16px]'>
-        {smallText} <br /> {breakText1} <br /> {breakText2} <br /> {breakText3} <br /> {breakText4} <br/>{breakText5}
+      <p className='mt-[6%] text-[16px'>
+        {smallText} 
       </p>
  
-      <div className='flex gap-[4%] font-bold mt-[12%] mb-[7%]'>
+      <div className='lg:flex lg:gap-[4%] lg:ont-bold lg:mb-[7%] hidden' style={{ marginTop: marginTop}}>
         <img src={userImage} alt={userName} />
         <p>{userName}</p>
+      </div>
+      <div className='flex flex-col my-[8%] gap-[4%] items-center justify-center lg:hidden'>
+      <img src={userImage} alt={userName} />
+      <p className='font-bold'>{userName}</p>
+      <p >UX Researcher</p>
       </div>
     </div>
   );

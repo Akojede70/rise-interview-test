@@ -38,11 +38,12 @@ module.exports = {
       colors: {
         primaryWhite: "#FFFFFF",
         primaryBlack: "#000000",
-        primaryTeal: "#07969E",           
+        primaryTeal: "#07969E",          
         primaryLightGray: "#ebebeb",
         primaryViolet: "#8c5ef7",
         primaryCyan: "#06979e",
         primaryTurquoise: "#A0DDE2",
+        primaryLightTurquoise: "#ECFEFE",
       },
       fontFamily: {
         'body': ['"Open Sans"', "sans", "Tomato Grotesk"],

@@ -6,10 +6,7 @@ interface HeroSectionRightProps {
   breakHeader: string;
   buttonText: string;
   people: string; 
-  smallText: string;
-  breakText1: string;
-  breakText2: string; 
-  breakText3: string; 
+  smallText: string; 
 }
 
 const HeroSectionRight: React.FC<HeroSectionRightProps> = ({
@@ -18,21 +15,18 @@ const HeroSectionRight: React.FC<HeroSectionRightProps> = ({
   buttonText,
   people,
   smallText,
-  breakText1,
-  breakText2, 
-  breakText3
 }) => {
   return (
     <div className='flex gap-[20%]'>
       <div>
         <img src={people} alt='people2' />
       </div>
-      <div className="flex flex-col pt-[13%] w-[50%]">
+      <div className="flex flex-col pt-[13%] w-[40%] ">
         <h2 className='text-3xl font-bold'>
           {header} <br /> {breakHeader}
         </h2>
-        <p className='my-[1.5%] borde'>
-          {smallText} <br /> {breakText1} <br /> {breakText2} <br/> {breakText3}
+        <p className='my-[1.5%]'>
+          {smallText} 
         </p>
         <button className="text-primaryTeal flex items-center gap-2 ">
           {buttonText}

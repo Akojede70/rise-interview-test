@@ -6,15 +6,23 @@ import ellipse from "./nav-icon-images/ellipse.png"
 
 // landing page
 // section-1 
-import ellipse1 from "./landing-icon-images/Ellipse-1.png"
-import ellipse2 from "./landing-icon-images/Ellipse-2.png"
-import ellipse3 from "./landing-icon-images/Ellipse-3.png"
-import ellipse4 from "./landing-icon-images/Ellipse-4.png"
-import ellipse5 from "./landing-icon-images/Ellipse-5.png"
-import ellipse6 from "./landing-icon-images/Ellipse-6.png"
+import ellipse1 from "./landing-icon-images/ellipse-1.png"
+import ellipse2 from "./landing-icon-images/ellipse-2.png"
+import ellipse3 from "./landing-icon-images/ellipse-3.png"
+import ellipse4 from "./landing-icon-images/ellipse-4.png"
+import ellipse5 from "./landing-icon-images/ellipse-5.png"
+import ellipse6 from "./landing-icon-images/ellipse-6.png"
 import apple from "./landing-icon-images/app-frame.png"
 import google from "./landing-icon-images/google-frame.png"
 import phone from "./landing-icon-images/Phone.png"
+// mobile
+import mobileEllipsea from "./landing-icon-images/ellipse-a.png"
+import mobileEllipseb from "./landing-icon-images/ellipse-b.png"
+import mobileEllipsec from "./landing-icon-images/ellipse-c.png"
+import mobileEllipsed from "./landing-icon-images/ellipse-d.png"
+import mobileEllipsee from "./landing-icon-images/ellipse-e.png"
+import mobileEllipsef from "./landing-icon-images/ellipse-e.png"
+import mobileEllipseg from "./landing-icon-images/ellipse-f.png"
 
 // section-2
 import people1 from "./landing-icon-images/people-icon1.png"
@@ -23,6 +31,7 @@ import people3 from "./landing-icon-images/people-icon3.png"
 import people4 from "./landing-icon-images/people-icon4.png"
 import logos from "./landing-icon-images/different-logo.png"
 import buttonArrowIcon  from "./landing-icon-images/button-arrow.png"
+import mobileLogo from "./landing-icon-images/mobile-logo.png"
 
 // section-3
 import circle1 from './landing-icon-images/circle1.png'
@@ -39,7 +48,8 @@ import raye from "./landing-icon-images/raye.png"
 // section 7
 import phoneWallet from "./landing-icon-images/phone-wallet.png"
 // section 8
-import bigImage from "./landing-icon-images/big-image.png"
+import slashedPhone from "./landing-icon-images/slashed-phone.png"
+import unslashedPhone from "./landing-icon-images/unslashed-phone.png"
 // footer 
 import footerArrow from "./footer-icon-images/footer-arrow.png"
 import footerLogo from "./footer-icon-images/footer-logo.png"
@@ -60,7 +70,14 @@ export {
     apple,
     google,
     phone,
-    
+    // mobile
+    mobileEllipsea,
+    mobileEllipseb,
+    mobileEllipsec,
+    mobileEllipsed,
+    mobileEllipsee,
+    mobileEllipsef,
+    mobileEllipseg,
     // section-2
     people1,
     people2,
@@ -68,6 +85,7 @@ export {
     people4,
     logos,
     buttonArrowIcon,
+    mobileLogo,
 
     // section 3
     circle1,
@@ -77,12 +95,16 @@ export {
     // section 4
     peoples,
     raye,
+
     // sectio 6
     jesse,
+
     // section 7
     phoneWallet,
+
     // section 8
-    bigImage,
+    slashedPhone,
+    unslashedPhone,
 
     // footer
     footerArrow,

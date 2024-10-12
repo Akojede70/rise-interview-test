@@ -5,26 +5,18 @@ interface AssetCardsProps {
   circle: string;
   header: string;
   smallText: string;
-  breakText1: string;
-  breakText2: string;
-  breakText3: string;
-  breakText4?: string;
-  breakText5?: string;
   btnText: string;
   bgColor: string;
+  marginTop?: string
 }
 
 const AssetCards: React.FC<AssetCardsProps> = ({
   circle,
   header,
   smallText,
-  breakText1,
-  breakText2,
-  breakText3,
-  breakText4 = '',
-  breakText5 = '',
   btnText,
   bgColor,
+  marginTop = "20%"
 }) => {
   return (
     <div className="rounded-lg shadow-lg max-w-xs mx-auto border border-gray-200 overflow-hidden">
@@ -42,13 +34,9 @@ const AssetCards: React.FC<AssetCardsProps> = ({
       <div className="pt-12 p-6 text-center ">
         <h3 className="text-2xl font-bold text-primaryBlack mb-2">{header}</h3>
         <div className='w-full'>
-        <p className="text-primaryBlack mb-4">
-          {smallText} <br />
-          {breakText1} <br />
-          {breakText2} <br />
-          {breakText3} <br />
-          {breakText4} <br />
-          {breakText5} <br />
+        <p className="text-primaryBlack mb-4 ">
+          {smallText} 
+          
         </p>
         </div>
         <div className="text-sm">
@@ -59,7 +47,7 @@ const AssetCards: React.FC<AssetCardsProps> = ({
             <span className="text-[#919fb5]">Risk Level:</span> Medium
           </p>
         </div>
-        <div className="flex justify-center mt-[20%]">
+        <div className="flex justify-center mt-[20%]" style={{ marginTop: marginTop,}}>
           <button className="text-primaryTeal flex items-center gap-2 font-bold">
             {btnText}
             <span>

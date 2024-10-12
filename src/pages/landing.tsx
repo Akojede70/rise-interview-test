@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
-import { apple, bigImage, circle1, circle2, circle3, ellipse1, ellipse2, ellipse3, ellipse4, ellipse6, google, jesse, logos, people1, people2, people3, people4, peoples, phone, phoneWallet, raye,  } from '../assets/png/images-icon'
+import { apple, circle1, circle2, circle3, ellipse1, ellipse2, ellipse3, ellipse4, ellipse6, google, jesse, logos, mobileLogo, people1, people2, people3, people4, peoples, phone, phoneWallet, raye, slashedPhone, unslashedPhone,  } from '../assets/png/images-icon'
 import HeroSectionLeft from '../components/hero-section/hero-section-left'
 import HeroSectionRight from '../components/hero-section/hero-section-right'
 import AssetCards from '../components/cards/asset-card'
@@ -40,7 +40,8 @@ const Landing = () => {
 
         {/* section 2 */}
         <section className='mt-[7%] px-[10%]'>
-          <div className='w-full bg-primaryWhite flex items-center justify-center'>
+          <div className='w-full bg-primaryWhite flex flex-col lg:flex-row items-center justify-center'>
+            <img src={mobileLogo} alt='mobile' className='lg:hidden mb-[5%]'/>
             <img src={logos} alt='different-logos'/>
           </div>
 
@@ -48,14 +49,14 @@ const Landing = () => {
          
 <div>
   <MobileHero header='Superior Performance' people={people1} smallText='Rise out perform your other alternative in two ways. The first is through our expert algorithm driven investment approach that picks through over 3,000 data sets to find the perfect investment for you. '/>
-  <MobileHero header='Superior Performance' people={people2} smallText='Rise out perform your other alternative in two ways. The first is through our expert algorithm driven investment approach that picks through over 3,000 data sets to find the perfect investment for you. '/>
-  <MobileHero header='Superior Performance' people={people3} smallText='Rise out perform your other alternative in two ways. The first is through our expert algorithm driven investment approach that picks through over 3,000 data sets to find the perfect investment for you. '/>
+  <MobileHero header='Personalization' people={people2} smallText="No two people are the same, and everyones's financial goal are different. Rise understands this, which is why we tailor your journey to financial freedom to fit you."/>
+  <MobileHero header='Diversification' people={people3} smallText="Rise offers to a choice of three asset classes: US equities and fixed income assets to provide stability to your investments and protection from market declines. you can pick one assets clas class or"/>
 </div>
     <div className='hidden lg:block'>
-   <HeroSectionLeft header=' Invest your money in dollars' smallText='By holding your investment in a stable' breakText1='currency your money grows more over' breakTest2='time and retains its value better.' buttonText='Start Investing Now' people={people1}/>
-     <HeroSectionRight header="Choose what's best" breakHeader='for you' smallText='unlike other platform, Rise lets you pick between' breakText1='stocks, US real estate and fixed income, according to' breakText2='your risk appetite. That way you can spread your risk and' breakText3="tap into different investment all in one place." buttonText='Start Investing Now' people={people2}/>
-     <HeroSectionLeft header='Set goals and reach them' smallText='You can invest towards a goal on Rise--retirement, higher' breakText1='education save for you home or travel budgets or create' breakTest2='a goal of your own and invest periodically to achieve them.' buttonText='Start Investing Now' people={people3}/>
-     <HeroSectionRight header='We remember so you dont' breakHeader='have to' smallText='Our Auto-invest feature makes it easy to stay consistent,' breakText1='even when you forget, Set a funding amount, frequency' breakText2='and payment method and Rise will automatically fund.' breakText3='your investment on schedule.' buttonText='Start Investing Now' people={people4}/>
+   <HeroSectionLeft header=' Invest your money in dollars' smallText='By holding your investment in a stable currency your money grows more over time and retains its value better.' buttonText='Start Investing Now' people={people1}/>
+     <HeroSectionRight header="Choose what's best" breakHeader='for you' smallText='unlike other platform, Rise lets you pick between stocks, US real estate and fixed income, according to your risk appetite. That way you can spread your risk and tap into different investment all in one place.' buttonText='Start Investing Now' people={people2}/>
+     <HeroSectionLeft header='Set goals and reach them' smallText='You can invest towards a goal on Rise--retirement, higher education save for you home or travel budgets or create a goal of your own and invest periodically to achieve them.' buttonText='Start Investing Now' people={people3}/>
+     <HeroSectionRight header='We remember so you dont' breakHeader='have to' smallText='Our Auto-invest feature makes it easy to stay consistent, even when you forget, Set a funding amount, frequency and payment method and Rise will automatically fund, your investment on schedule.' buttonText='Start Investing Now' people={people4}/>
      </div>
         </section>
 
@@ -66,9 +67,9 @@ const Landing = () => {
     <p className='text-[18px] my-[3%] lg:my-0'>It's your money, choose where you invest it </p>
   </div>
   <div className=' space-y-[14%] lg:space-y-0 mt-[8%] lg:mt-0 lg:flex items-center justify-center'>
-    <AssetCards circle={circle3} header='Stocks' smallText='We help you invest and manage ' breakText1='your money by investing in our ' breakText2='portfolio of 30 high-growth stocks' breakText3='across the US market with our equity' breakText4='portfolioof power stocks.' btnText='Learn How Stocks Work' bgColor='bg-[#fff4f0]'/>
-    <AssetCards circle={circle2} header='Real Estate' smallText='Our Real Estate plan is the sweet' breakText1='middle. Best for those who want a' breakText2='balance of good returns and medium' breakText3='risk. This plan invest in rented' breakText4='building in the US.' btnText='Learn How Real Estate Work' bgColor='bg-[#f6f2ff]'/>
-    <AssetCards circle={circle1} header='Fixed Income' smallText='A low-risk asset perfect for anyone' breakText1='who wants to protect their money in a' breakText2='secure, appreciating currency i.e the' breakText3='dollar. for people who want to protect' breakText4='their hard-earned money from' breakText5='inflation while earning steady returns.' btnText='Learn How Fixed Income Work' bgColor='bg-[#edffff]'/>
+    <AssetCards circle={circle3} header='Stocks' smallText='We help you invest and manage your money by investing in our portfolio of 30 high-growth stocks across the US market with our equity portfolioof power stocks.' btnText='Learn How Stocks Work' bgColor='bg-[#fff4f0]'/>
+    <AssetCards circle={circle2} header='Real Estate' smallText='Our Real Estate plan is the sweet middle. Best for those who want a balance of good returns and medium risk. This plan invest in rented building in the US.' btnText='Learn How Real Estate Work' bgColor='bg-[#f6f2ff]'/>
+    <AssetCards circle={circle1} header='Fixed Income'  marginTop="10%" smallText="A low-risk asset perfect for anyone who wants to protect their money in a secure, appreciating currency i.e the dollar. for people who want to protect their hard-earned money from" btnText='Learn How Fixed Income Work' bgColor='bg-[#edffff]'/>
     </div>
  </section>
 
@@ -105,15 +106,25 @@ const Landing = () => {
 
 
         {/* section 6 */}
-        <section className='mt-[5%] px-[5%] hidden lg:block'>
+        <section className='lg:mt-[5%] lg:px-[5%] '>
+          <div className='hidden lg:block'>
           <div className='text-center'>
             <h2 className='text-4xl font-bold text-primaryCyan'> From The People Who Use Rise</h2>
             <p className='text-[18px]'>Our mission at Risevest is to empower more people just like you <br/> to achieve your personal financial goals.</p>
           </div>
           <div className='flex items-center justify-center gap-[4%] mt-[2%]'>
-           <UserCard smallText="don't want to invest in seperate stocks because" breakText1='I am not a financial expert, and I would rather trust' breakText2=' my money in the hands of people like Rise, who' breakText3='are experienced and knowledgeable.' userImage={jesse} userName='Lade'/>
-           <UserCard smallText="I don't want to invest in seperate stocks because" breakText1='I am not financial expert and I would rather trust' breakText2='my money in the hands of people like Rise who' breakText3='are skilled and knowledgeable.' userImage={jesse} userName='Jesse'/>
-           <UserCard width="30%" height='240px' smallText='I choose Rise because of its leadership wealth of' breakText1='  knowledge, and the people who I support. I invest' breakText2=' with Rise in other to protect my savings and' breakText3='investment from being depleted by devaluation and' breakText4="inflation that's at an all time high in Nigeria." breakText5="" userImage={raye} userName='Raye'/>
+           <UserCard smallText="I don't want to invest in seperate stocks because I am not financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable." userImage={jesse} userName='Lade'/>
+           <UserCard smallText="I don't want to invest in seperate stocks because I am not financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable." userImage={jesse} userName='Jesse'/>
+           <UserCard width="30%" height='220px' marginTop='5%'  smallText="I choose Rise because of its leadership wealth of  knowledge, and the people who I support. I invest with Rise in other to protect my savings and investment from being depleted by devaluation and inflation that's at an all time high in Nigeria." userImage={raye} userName='Raye'/>
+           </div>
+           </div>
+           {/* mobile */}
+           <div className='my-[15%] text-center lg:hidden'>
+           <h2 className='text-3xl font-bold text-primaryCyan'> what our customers are saying</h2>
+           <p className='my-[4%] text-[17px]'>we serve over 80,000 amazing users</p>
+           <div className='flex items-center justify-center text-center'>
+           <UserCard width="90%" smallText="I don't want to invest in seperate stocks because I am not financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable." userImage={jesse} userName='Jesse'/>
+           </div>
            </div>
         </section>
 
@@ -138,8 +149,38 @@ const Landing = () => {
         
         {/* section 8 */}
         <section className='mt-[10%] px-[5%] mb-[10%]'>
-           <div className='flex items-center justify-center'>
-            <img src={bigImage} alt='details' className='w-[91%] md:block hidden'/>
+
+           <div className='w-[90%] mx-auto rounded-[30px]  bg-primaryLightTurquoise hidden md:block'>
+           <div className='flex gap-[5%]'>
+            <div className='w-[60%] mt-[8%] pl-[2%]'>
+              <h6 className='text-primaryTeal font-bold mb-[1%]'> Download The Rise App</h6>
+              <h2 className='text-3xl font-bold w-[68%]'> Join our 100,000 users investing and setting long term goals!</h2>
+              <p className='mt-[2%] mb-[4%]'>Dollar investment that helps you grow.</p>
+              <div className='flex gap-[1%]'>
+                <img src={apple} alt='apple'/>
+                <img src={google} alt='google'/>
+              </div>
+            </div>
+            <div>
+              <img src={unslashedPhone} alt='unslashed' className='pt-[10%]' />
+            </div>
+            </div>
+           </div>
+
+           <div className='w-[100%] mt-[8%] mx-auto rounded-[30px]  bg-primaryLightTurquoise md:hidden'>
+           <div className='pl-[2%] text-center pt-[10%]'>
+              <h6 className='text-primaryTeal font-bold mb-[2%]'> Download The Rise App</h6>
+              <h2 className='text-[20px] font-bold'> Join our 100,000 users investing and setting long term goals!</h2>
+              <p className='mt-[3%] mb-[5%]'>Dollar investment that helps you grow.</p>
+              <div className='flex items-center justify-center gap-[3%]'>
+                <img src={apple} alt='apple'/>
+                <img src={google} alt='google'/>
+              </div>
+
+              <div className='flex items-center justify-center pt-[9%]'>
+                <img src={slashedPhone} alt='slashedPhone'/>
+              </div>
+            </div>
            </div>
         </section>
       </body>
