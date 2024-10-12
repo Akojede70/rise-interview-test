@@ -5,13 +5,13 @@ import ArrowButton from './arrow-button'
 const Footer = () => {
   return (
     <footer className='w-full mb-[5%] px-[5%] md:px-[5%]'>
-      <div className='md:flex justify-center gap-[17%]'>
+      <div className='lg:flex justify-center gap-[17%]'>
         {/* 1st col */}
       <div >
         <div>
-        <img src={footerLogo} alt='footer logo' className='mb-[30%] md:w-[70%] pt-[2%] '/>
+        <img src={footerLogo} alt='footer logo' className='mb-[5%] lg:mb-[30%] lg:w-[70%] pt-[2%] '/>
         </div>
-        <div className='h-[18%] flex flex-col gap-[20%]'>
+        <div className='space-y-[5%] lg:space-y-0 h-[18%] flex flex-col lg:gap-[20%]'>
         <button className='text-left'> About Us</button>
         <button className='text-left'> Careers</button>
         <button className='text-left'> FAQs</button>
@@ -23,7 +23,7 @@ const Footer = () => {
 
       {/* 2nd col */}
       <div className='flex flex-col gap-[4%]'>
-        <h6 className='font-bold mb-[8%]'>Explore</h6>
+        <h6 className='font-bold mb-[4%] lg:mb-[8%]'>Explore</h6>
         <ArrowButton text='Investment Club'/>
         <ArrowButton text='Blog'/>
       </div>

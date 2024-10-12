@@ -5,6 +5,7 @@ import HeroSectionLeft from '../components/hero-section/hero-section-left'
 import HeroSectionRight from '../components/hero-section/hero-section-right'
 import AssetCards from '../components/cards/asset-card'
 import UserCard from '../components/cards/users-card'
+import MobileHero from '../components/hero-section/mobile-hero'
 
 const Landing = () => {
   return (
@@ -42,7 +43,15 @@ const Landing = () => {
           <div className='w-full bg-primaryWhite flex items-center justify-center'>
             <img src={logos} alt='different-logos'/>
           </div>
-    <div>
+
+         
+         
+<div>
+  <MobileHero header='Superior Performance' people={people1} smallText='Rise out perform your other alternative in two ways. The first is through our expert algorithm driven investment approach that picks through over 3,000 data sets to find the perfect investment for you. '/>
+  <MobileHero header='Superior Performance' people={people2} smallText='Rise out perform your other alternative in two ways. The first is through our expert algorithm driven investment approach that picks through over 3,000 data sets to find the perfect investment for you. '/>
+  <MobileHero header='Superior Performance' people={people3} smallText='Rise out perform your other alternative in two ways. The first is through our expert algorithm driven investment approach that picks through over 3,000 data sets to find the perfect investment for you. '/>
+</div>
+    <div className='hidden lg:block'>
    <HeroSectionLeft header=' Invest your money in dollars' smallText='By holding your investment in a stable' breakText1='currency your money grows more over' breakTest2='time and retains its value better.' buttonText='Start Investing Now' people={people1}/>
      <HeroSectionRight header="Choose what's best" breakHeader='for you' smallText='unlike other platform, Rise lets you pick between' breakText1='stocks, US real estate and fixed income, according to' breakText2='your risk appetite. That way you can spread your risk and' breakText3="tap into different investment all in one place." buttonText='Start Investing Now' people={people2}/>
      <HeroSectionLeft header='Set goals and reach them' smallText='You can invest towards a goal on Rise--retirement, higher' breakText1='education save for you home or travel budgets or create' breakTest2='a goal of your own and invest periodically to achieve them.' buttonText='Start Investing Now' people={people3}/>
@@ -64,7 +73,7 @@ const Landing = () => {
  </section>
 
            {/* section 4 */}
-        <section className='mt-[10%] px-[5%]'>
+        <section className='mt-[10%] px-[5%] hidden lg:block'>
           <div className='flex gap-[23%] items-center justify-center'>
            <div>
             <img src={phoneWallet} alt='phone wallet'/>
@@ -96,7 +105,7 @@ const Landing = () => {
 
 
         {/* section 6 */}
-        <section className='mt-[5%] px-[5%]'>
+        <section className='mt-[5%] px-[5%] hidden lg:block'>
           <div className='text-center'>
             <h2 className='text-4xl font-bold text-primaryCyan'> From The People Who Use Rise</h2>
             <p className='text-[18px]'>Our mission at Risevest is to empower more people just like you <br/> to achieve your personal financial goals.</p>
