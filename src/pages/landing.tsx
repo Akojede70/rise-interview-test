@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
-import { apple, circle1, circle2, circle3, ellipse1, ellipse2, ellipse3, ellipse4, ellipse6, google, jesse, logos, mobileEllipsea, mobileEllipseb, mobileEllipsec, mobileEllipsed, mobileEllipsee, mobileEllipsef, mobileEllipseg, mobileLogo, mobilPhone, people1, people2, people3, people4, peoples, phone, phoneWallet, raye, slashedPhone, unslashedPhone,  } from '../assets/png/images-icon'
+import { apple, circle1, circle2, circle3, ellipse1, ellipse2, ellipse3, ellipse4, ellipse6, google, jesse, logos, mobileEllipsea, mobileEllipseb, mobileEllipsec, mobileEllipsee, mobileEllipsef, mobileEllipseg, mobileLogo, mobilPhone, people1, people2, people3, people4, peoples, phone, phoneWallet, raye, slashedPhone, unslashedPhone,  } from '../assets/png/images-icon'
 import HeroSectionLeft from '../components/hero-section/hero-section-left'
 import HeroSectionRight from '../components/hero-section/hero-section-right'
 import AssetCards from '../components/cards/asset-card'
