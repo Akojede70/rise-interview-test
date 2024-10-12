@@ -49,7 +49,7 @@ const Footer = () => {
 
 
       {/* mobile */}
-      <div className='lg:hidden px-[5%] mb-[10%]'>
+      <div className='lg:hidden px-[5%] mb-[10%] mt-[20%]'>
       <div className='flex justify-between'>
       <div >
         <img src={footerLogo} alt='footer logo' className='mb-[30%] md:w-[70%] pt-[2%] '/>

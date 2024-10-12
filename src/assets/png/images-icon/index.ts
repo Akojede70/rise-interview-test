@@ -15,6 +15,7 @@ import ellipse6 from "./landing-icon-images/ellipse-6.png"
 import apple from "./landing-icon-images/app-frame.png"
 import google from "./landing-icon-images/google-frame.png"
 import phone from "./landing-icon-images/Phone.png"
+import mobilPhone from "./landing-icon-images/mobile-phone.png"
 // mobile
 import mobileEllipsea from "./landing-icon-images/ellipse-a.png"
 import mobileEllipseb from "./landing-icon-images/ellipse-b.png"
@@ -70,6 +71,7 @@ export {
     apple,
     google,
     phone,
+    mobilPhone,
     // mobile
     mobileEllipsea,
     mobileEllipseb,

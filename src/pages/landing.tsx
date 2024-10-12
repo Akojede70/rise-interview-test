@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
-import { apple, circle1, circle2, circle3, ellipse1, ellipse2, ellipse3, ellipse4, ellipse6, google, jesse, logos, mobileLogo, people1, people2, people3, people4, peoples, phone, phoneWallet, raye, slashedPhone, unslashedPhone,  } from '../assets/png/images-icon'
+import { apple, circle1, circle2, circle3, ellipse1, ellipse2, ellipse3, ellipse4, ellipse6, google, jesse, logos, mobileEllipsea, mobileEllipseb, mobileEllipsec, mobileEllipsed, mobileEllipsee, mobileEllipsef, mobileEllipseg, mobileLogo, mobilPhone, people1, people2, people3, people4, peoples, phone, phoneWallet, raye, slashedPhone, unslashedPhone,  } from '../assets/png/images-icon'
 import HeroSectionLeft from '../components/hero-section/hero-section-left'
 import HeroSectionRight from '../components/hero-section/hero-section-right'
 import AssetCards from '../components/cards/asset-card'
@@ -14,6 +14,16 @@ const Landing = () => {
         
         {/* section 1 */}
       <section className='px-[5%]'>
+        {/* mobile */}
+        <img src={mobileEllipsea} alt='mobileEllipsea' className='absolute lg:hidden left-[75%] top-[19%] z-20 animate-moveLeftRight'/>
+        <img src={mobileEllipseb} alt='mobileEllipseb' className='absolute lg:hidden left-[89%] top-[32%] z-20 animate-moveUpDown'/>
+        <img src={mobileEllipsef} alt='mobileEllipsef' className='absolute lg:hidden left-[7%] top-[29%] z-20 animate-moveUpDown'/>
+        <img src={mobileEllipsec} alt='mobileEllipsec' className='absolute lg:hidden left-[7%] top-[76%] z-20 animate-moveUpDown'/>
+        <img src={mobileEllipsec} alt='mobileEllipsec' className='absolute lg:hidden left-[3%] top-[136%] z-20 animate-moveUpDown'/>
+        <img src={mobileEllipseg} alt='mobileEllipseg' className='absolute lg:hidden left-[90%] top-[94%] z-20 animate-moveUpDown'/>
+        <img src={mobileEllipsee} alt='mobileEllipsee' className='absolute lg:hidden left-[2%] top-[107%] z-20 animate-moveUpDown'/>
+
+        {/* mobile */}
       <img src={ellipse4} alt='elipse4' className='absolute hidden lg:block left-[9%] top-[24%] z-20 animate-moveLeftRight'/>
       <img src={ellipse3} alt='elipse3' className='absolute hidden lg:block left-[56%] top-[15%] z-0 animate-moveUpDown'/>
       <div className='lg:flex lg:flex-wrap lg:gap-[33%]'>
@@ -30,7 +40,8 @@ const Landing = () => {
         <img src={google} alt="google" className='h-[50px] md:h-auto' />
         </div>
         </div>
-        <img src={phone} alt='phone' className='w-full mt-[13%] lg:mt-0 lg:w-[19%] lg:h-[19%] '/>
+        <img src={phone} alt='phone' className='w-full hidden lg:block mt-[13%] lg:mt-0 lg:w-[19%] lg:h-[19%] '/>
+        <img src={mobilPhone} alt='mobilePhone' className='lg:hidden w-full mt-[13%] lg:mt-0 lg:w-[19%] lg:h-[19%] '/>
         <img src={ellipse6} alt='elipse6' className='absolute hidden lg:block left-[40.7%] top-[46.5%] z-0'/>
         </div>
         <img src={ellipse2} alt='elipse2' className='absolute hidden lg:block left-[14%] top-[85%] z-20 animate-moveLeftRight'/>
@@ -40,7 +51,7 @@ const Landing = () => {
 
         {/* section 2 */}
         <section className='mt-[7%] px-[10%]'>
-          <div className='w-full bg-primaryWhite flex flex-col lg:flex-row items-center justify-center'>
+          <div className='w-full bg-primaryWhite'>
             <img src={mobileLogo} alt='mobile' className='lg:hidden mb-[5%]'/>
             <img src={logos} alt='different-logos'/>
           </div>
@@ -63,7 +74,7 @@ const Landing = () => {
 {/* section 3 */}
  <section className='lg:px-[10%]'>
   <div className='text-center mb-[3%]'>
-    <h2 className='text-4xl font-bold'>Asset Classes</h2>
+    <h2 className='text-4xl font-bold mt-[20%] lg:mt-0'>Asset Classes</h2>
     <p className='text-[18px] my-[3%] lg:my-0'>It's your money, choose where you invest it </p>
   </div>
   <div className=' space-y-[14%] lg:space-y-0 mt-[8%] lg:mt-0 lg:flex items-center justify-center'>
@@ -89,7 +100,7 @@ const Landing = () => {
         </section>
 
    {/* section 5 */}
-        <section className='mt-[5%]'>
+        <section className='mt-[20%] lg:mt-[5%]'>
         <div className="bg-gradient-to-r from-pink-200 via-white to-blue-200 flex justify-center py-16 px-6">
       <div className="max-w-3xl text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-primaryBlack mb-4">
@@ -119,7 +130,7 @@ const Landing = () => {
            </div>
            </div>
            {/* mobile */}
-           <div className='my-[15%] text-center lg:hidden'>
+           <div className='my-[20%] lg:my-[15%] text-center lg:hidden'>
            <h2 className='text-3xl font-bold text-primaryCyan'> what our customers are saying</h2>
            <p className='my-[4%] text-[17px]'>we serve over 80,000 amazing users</p>
            <div className='flex items-center justify-center text-center'>
@@ -132,7 +143,7 @@ const Landing = () => {
         <section className='mt-[10%] px-[10%]'>
           <div className='flex flex-col-reverse lg:flex lg:flex-row'>
           <div className='flex lg:w-[55%] pt-[6%] flex-col'>
-              <h4 className='text-center lg:text-left text-4xl font-bold mt-[4%] lg:mt-0'>Join The Rise Community</h4>
+              <h4 className='text-center lg:text-left text-4xl font-bold mt-[20%] lg:mt-0'>Join The Rise Community</h4>
               <div className='lg:w-[80%] '>
               <p className='my-[20px] text-[17px] lg:block hidden'> If you want to go far, go together. Our Telegram Community surrounds you with others who can help you along your financial journey with tips support advice and learning it's completely free and open to new and seasoned investors.</p>
               <p className='text-center block lg:hidden my-[5%]'> If you want to go far, go together. </p>
@@ -148,7 +159,7 @@ const Landing = () => {
         </section>
         
         {/* section 8 */}
-        <section className='mt-[10%] px-[5%] mb-[10%]'>
+        <section className='mt-[20%] lg:mt-[10%] px-[5%] mb-[10%]'>
 
            <div className='w-[90%] mx-auto rounded-[30px]  bg-primaryLightTurquoise hidden md:block'>
            <div className='flex gap-[5%]'>
