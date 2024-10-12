@@ -5,7 +5,7 @@ import arrow from "./nav-icon-images/down-arrow.png"
 import ellipse from "./nav-icon-images/ellipse.png"
 
 // landing page
-// section-1 
+// section-1  
 import ellipse1 from "./landing-icon-images/ellipse-1.png"
 import ellipse2 from "./landing-icon-images/ellipse-2.png"
 import ellipse3 from "./landing-icon-images/ellipse-3.png"
