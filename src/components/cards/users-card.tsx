@@ -26,10 +26,12 @@ const UserCard: React.FC<UserCardProps> = ({
   height = 'auto'
 }) => {
   return (
-    <div className='w-[30%] border rounded-[6px] shadow-left-right px-4' style={{ width: width, height: height}}>
-      <p className='pt-[6%] text-[16px]'>
+    <div className='w-[35%] border rounded-[6px] shadow-left-right px-3 ' style={{ width: width, height: height}}>
+      
+      <p className='mt-[6%] text-[16px]'>
         {smallText} <br /> {breakText1} <br /> {breakText2} <br /> {breakText3} <br /> {breakText4} <br/>{breakText5}
       </p>
+ 
       <div className='flex gap-[4%] font-bold mt-[12%] mb-[7%]'>
         <img src={userImage} alt={userName} />
         <p>{userName}</p>

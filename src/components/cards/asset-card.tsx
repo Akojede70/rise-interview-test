@@ -39,8 +39,9 @@ const AssetCards: React.FC<AssetCardsProps> = ({
       </div>
 
       {/* Content */}
-      <div className="pt-12 p-6 text-center">
+      <div className="pt-12 p-6 text-center ">
         <h3 className="text-2xl font-bold text-primaryBlack mb-2">{header}</h3>
+        <div className='w-full'>
         <p className="text-primaryBlack mb-4">
           {smallText} <br />
           {breakText1} <br />
@@ -49,6 +50,7 @@ const AssetCards: React.FC<AssetCardsProps> = ({
           {breakText4} <br />
           {breakText5} <br />
         </p>
+        </div>
         <div className="text-sm">
           <p className="text-primaryBlack mb-1">
             <span className="text-[#919fb5]">Historical returns:</span> 14% per annum

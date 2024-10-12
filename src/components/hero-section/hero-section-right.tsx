@@ -27,11 +27,11 @@ const HeroSectionRight: React.FC<HeroSectionRightProps> = ({
       <div>
         <img src={people} alt='people2' />
       </div>
-      <div className="flex flex-col pt-[13%]">
+      <div className="flex flex-col pt-[13%] w-[50%]">
         <h2 className='text-3xl font-bold'>
           {header} <br /> {breakHeader}
         </h2>
-        <p className='my-[1.5%]'>
+        <p className='my-[1.5%] borde'>
           {smallText} <br /> {breakText1} <br /> {breakText2} <br/> {breakText3}
         </p>
         <button className="text-primaryTeal flex items-center gap-2 ">

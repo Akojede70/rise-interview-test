@@ -21,7 +21,7 @@ buttonText,
 }) => {
   return (
     <div className='flex gap-[20%]'>
-      <div className="flex flex-col pt-[13%]">
+      <div className="flex flex-col pt-[13%] w-[60%]">
         <h2 className='text-3xl font-bold'>
           {header}
         </h2>

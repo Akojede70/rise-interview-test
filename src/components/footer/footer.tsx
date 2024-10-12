@@ -4,12 +4,12 @@ import ArrowButton from './arrow-button'
 
 const Footer = () => {
   return (
-    <footer className='w-full mb-[5%] px-[5%]'>
-      <div className='flex justify-center gap-[17%]'>
+    <footer className='w-full mb-[5%] px-[5%] md:px-[5%]'>
+      <div className='md:flex justify-center gap-[17%]'>
         {/* 1st col */}
       <div >
         <div>
-        <img src={footerLogo} alt='footer logo' className='mb-[30%] w-[70%] pt-[2%] '/>
+        <img src={footerLogo} alt='footer logo' className='mb-[30%] md:w-[70%] pt-[2%] '/>
         </div>
         <div className='h-[18%] flex flex-col gap-[20%]'>
         <button className='text-left'> About Us</button>
